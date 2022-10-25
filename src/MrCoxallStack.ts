@@ -9,7 +9,7 @@
 class MrCoxallStack {
   stackAsList: number[] = []
 
-  // getter
+  // methods
   getList(): number[] | string {
     if (this.stackAsList.length === 0) {
       return 'nothing'
@@ -18,7 +18,6 @@ class MrCoxallStack {
     }
   }
 
-  // setter
   pushItem(pushedNumber: number): void {
     this.stackAsList.push(pushedNumber)
   }
@@ -43,6 +42,7 @@ class MrCoxallStack {
     }
   }
 
+  // clearItem()setter
   clearItem(): void {
     this.stackAsList = []
   }
