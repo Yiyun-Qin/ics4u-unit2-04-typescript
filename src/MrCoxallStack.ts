@@ -11,7 +11,7 @@ class MrCoxallStack {
 
   // getter
   getList(): number[] | string {
-    if (this.stackAsList === undefined) {
+    if (this.stackAsList.length === 0) {
       return 'nothing'
     } else {
       return this.stackAsList
@@ -25,7 +25,7 @@ class MrCoxallStack {
 
   popItem(): any {
     let popNumber: number | undefined
-    if (this.stackAsList === undefined) {
+    if (this.stackAsList.length === 0) {
       console.log('Nothing in the list!')
     } else {
       popNumber = this.stackAsList.pop()
@@ -35,7 +35,7 @@ class MrCoxallStack {
 
   peekItem(): any {
     let peekNumber: number | undefined
-    if (this.stackAsList === undefined) {
+    if (this.stackAsList.length === 0) {
       console.log('Nothing in the list!')
     } else {
       peekNumber = this.stackAsList[this.stackAsList.length - 1]
